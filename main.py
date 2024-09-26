@@ -1,4 +1,4 @@
-programCounter = 0;
+programCounter = 0
 code = []
 labels = {}
 memory, registers = {}, {}
