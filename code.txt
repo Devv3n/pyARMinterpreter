@@ -1,0 +1,35 @@
+LDR R1, #7
+LDR R2, #8
+
+LDR R4, 5
+ADD R3, R1, R2
+CMP R3, #15
+BGT true
+B false
+:true
+LDR R4, 6
+HALT
+:false
+LDR R4, 5
+HALT
+
+
+
+
+HALT
+LDR R0, 1
+STR R0, 2
+ADD R1, R0, #1
+SUB R2, R0, #1
+MOV R3, R2
+CMP R0, #2
+BEQ meow
+:meow
+AND R4, R0, #12
+ORR R5, R0, #12
+EOR R6, R0, #12
+MVN R7, #1
+LSL R8, R0, #1
+LSR R9, R0, #1
+HALT
+STR R0, 3
